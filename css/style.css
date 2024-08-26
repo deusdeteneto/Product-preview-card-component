@@ -3,38 +3,102 @@
 :root {
   /* Primary Colors */
   --dark-cyan: hsl(158, 36%, 37%);
+  --dark-green: hsl(169, 93%, 11%);
   --cream: hsl(30, 38%, 92%);
 
   /* Neutral Colors */
   --very-dark-blue: hsl(212, 21%, 14%);
   --dark-grayish-blue: hsl(228, 12%, 48%);
   --white: hsl(0, 0%, 100%);
+
+  /* Font Variables */
+  --font-primary: "Montserrat", sans-serif;
+  --font-secondary: "Fraunces", serif;
+
+  /* Font Sizes */
+  --font-size-small: 14px;
+  --font-size-xs: 12px;
+  --font-size-xxs: 11px;
 }
 
-.attribution {
-  font-size: 11px;
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cream);
+  font-family: var(--font-primary);
+}
+
+.card {
+  border: none;
+}
+
+#sutitle-text {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 500;
+  color: var(--dark-grayish-blue);
+}
+
+.card-title {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  color: var(--very-dark-blue);
+}
+
+.card-text {
+  color: var(--dark-grayish-blue);
+  font-size: var(--font-size-small);
+  font-weight: 500;
+}
+
+#price-title {
+  color: var(--dark-cyan);
+}
+
+#price-text {
+  text-decoration: line-through;
+}
+
+.btn {
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  border: none;
+  font-weight: 500;
+  font-size: var(--font-size-xs);
+  border-radius: 5px;
+  padding: 10px 15px;
+  transition: background-color 0.5s ease;
+}
+
+.btn:hover {
+  background-color: var(--dark-green);
+  color: var(--white);
+}
+
+footer .attribution {
+  font-size: var(--font-size-xxs);
   text-align: center;
 }
-.attribution a {
+
+footer .attribution a {
   color: hsl(228, 45%, 44%);
+  text-decoration: none;
 }
 
-/* 
-.montserrat-<uniquifier> {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+footer .attribution a:hover {
+  text-decoration: underline;
 }
 
-
-.fraunces-<uniquifier> {
-  font-family: "Fraunces", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "SOFT" 0,
-    "WONK" 0;
-} 
-*/
+@media (max-width: 576px) {
+  .card {
+    padding: 10px;
+  }
+}
