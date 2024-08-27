@@ -21,7 +21,7 @@ Sinta-se à vontade para visitar meu perfil no Frontend Mentor - [@deusdeteneto]
 
 ### Screenshot
 
-![Screenshot do Projeto](https://raw.githubusercontent.com/deusdeteneto/Seu-Repositorio/main/design/desktop-design.jpg) <!-- Substitua o link pela imagem de captura de tela do seu projeto -->
+![Screenshot do Projeto](https://raw.githubusercontent.com/deusdeteneto/Product-preview-card-component/main/design/image-desktop.jpeg)
 
 ### Links
 
