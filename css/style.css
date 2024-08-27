@@ -100,7 +100,8 @@ body {
 .attribution {
   color: var(--stone-600);
   font-size: 11px;
-  text-align: center;
+  display: flex;
+  text-align: flex-end;
   padding: 10px;
 }
 
