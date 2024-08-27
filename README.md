@@ -25,8 +25,8 @@ Sinta-se à vontade para visitar meu perfil no Frontend Mentor - [@deusdeteneto]
 
 ### Links
 
-- URL da Solução: [Adicionar URL da solução aqui](https://www.frontendmentor.io/solutions/recipe-page-7k_7AJxq-q) <!-- Substitua pela URL do seu repositório ou site -->
-- URL do Site: [Adicionar URL do site aqui](https://recipe-page-zeta-five.vercel.app/) <!-- Substitua pela URL do site ao vivo -->
+- URL da Solução: [Adicionar URL da solução aqui](https://www.frontendmentor.io/solutions/product-preview-card-component-za8EjZ3YOC) 
+- URL do Site: [Adicionar URL do site aqui](https://product-preview-card-component-chi-sand.vercel.app/) 
 
 ## Meu processo
 
