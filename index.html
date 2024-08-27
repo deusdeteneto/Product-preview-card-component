@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
     <meta
       name="description"
       content="Product preview card for Gabrielle Essence Eau De Parfum. View details and pricing for this luxurious Chanel perfume."
@@ -23,47 +26,62 @@
     <title>Gabrielle Essence Eau De Parfum | Product Preview</title>
   </head>
   <body>
-    <main
-      class="card mb-3 d-flex justify-content-center m-auto"
-      style="max-width: 600px"
-    >
+    <main class="card mb-md-3 m-3 rounded-3 p-0" style="max-width: 600px">
       <div class="row g-0">
-        <div class="col-md-6">
+        <div class="col-sm-6">
+          <!-- Imagem para dispositivos maiores que 576px -->
+
           <img
             src="images/image-product-desktop.jpg"
-            class="img-fluid rounded-start"
+            class="img-fluid rounded-start d-none d-sm-block"
+            id="img-desktop"
+            alt="Gabrielle Essence Eau De Parfum bottle"
+            aria-label="Gabrielle Essence Eau De Parfum"
+          />
+
+          <!-- Imagem para dispositivos menores que 576px -->
+          <img
+            src="images/image-product-mobile.jpg"
+            id="img-mobile"
+            class="img-fluid rounded-top-3 d-block d-sm-none"
             alt="Gabrielle Essence Eau De Parfum bottle"
             aria-label="Gabrielle Essence Eau De Parfum"
           />
         </div>
-        <div class="col-md-6">
-          <div class="card-body">
+
+        <div class="card-body col-sm-6 p-4">
+          <p class="card-text m-0">
+            <small class="text-body-secondary" id="sutitle-text">Perfume</small>
+          </p>
+          <h1 class="card-title">Gabrielle Essence Eau De Parfum</h1>
+          <p class="card-text">
+            A floral, solar, and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="price d-flex align-items-center mb-3">
+            <h2 class="card-title" id="price-title">$149.99</h2>
             <p class="card-text">
-              <small class="text-body-secondary" id="sutitle-text"
-                >Perfume</small
-              >
+              <small class="text-body-secondary" id="price-text">$169.99</small>
             </p>
-            <h1 class="card-title">Gabrielle Essence Eau De Parfum</h1>
-            <p class="card-text">
-              A floral, solar, and voluptuous interpretation composed by Olivier
-              Polge, Perfumer-Creator for the House of CHANEL.
-            </p>
-            <div class="price d-flex align-items-center mb-3">
-              <h2 class="card-title m-0 me-3" id="price-title">$149.99</h2>
-              <p class="card-text">
-                <small class="text-body-secondary" id="price-text"
-                  >$169.99</small
-                >
-              </p>
-            </div>
-            <button
-              type="button"
-              class="btn"
-              aria-label="Add Gabrielle Essence Eau De Parfum to cart"
-            >
-              Add to Cart
-            </button>
           </div>
+          <button
+            type="button"
+            class="btn w-100 rounded-3"
+            aria-label="Add Gabrielle Essence Eau De Parfum to cart"
+          >
+            <svg
+              width="15"
+              height="16"
+              xmlns="http://www.w3.org/2000/svg"
+              class="me-2"
+            >
+              <path
+                d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z"
+                fill="#FFF"
+              />
+            </svg>
+            Add to Cart
+          </button>
         </div>
       </div>
     </main>
